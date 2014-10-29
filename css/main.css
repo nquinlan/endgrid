@@ -155,10 +155,32 @@ section {
     margin-top: 30px;
 }
 
+#explanation {
+    background: #000;
+    padding: 20px 5%;
+    min-height: 150vh;
+}
 
+#explanation p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    
+    padding: 0;
+    margin: 0 20%;
 
+    position: absolute;
+}
 
+#explanation p strong {
+    font-weight: normal;
+}
 
+#explanation p a {
+    color: #748db6;
+    text-decoration: none;
+}
 
 
 
