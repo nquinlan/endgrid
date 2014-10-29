@@ -61,6 +61,100 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.slabtexted .slabtext
+   {
+   display:-moz-inline-box;
+   display:inline-block;
+   white-space:nowrap;
+   }
+.slabtextinactive .slabtext
+   {
+   display:inline;
+   white-space:normal;
+   font-size:1em !important;
+   letter-spacing:inherit !important;
+   word-spacing:inherit !important;
+   *letter-spacing:0 !important;
+   *word-spacing:0 !important;
+   }
+.slabtextdone .slabtext
+   {
+   display:block;
+   }
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+    background: black;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#title {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 20px 0 20px;
+}
+
+#title .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+
+    background: no-repeat center center;
+    background-size: cover;
+
+    -webkit-backface-visibility: hidden;
+
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+}
+
+#title img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+
+#title h1, #title h2 {
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+
+#title h1, #title h2 {
+    font-weight: normal;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1;
+}
+
+#title h1 span {
+    display: block;
+}
+
+#title h1 span.bold {
+    font-weight: bold;
+}
+
+#title h2 {
+    margin-top: 30px;
+}
+
 
 
 
@@ -79,7 +173,26 @@ textarea {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 1240px) {
+    #title img {
+        position: absolute;
+        bottom: 0px;
+        max-width: 772px;
+    }
+    #title h1 {
+        position: absolute;
+        top: 40px;
+        left: 840px;
+        width: 400px;
+    }
+
+    #title h2 {
+        position: absolute;
+        top: 400px;
+        left: 840px;
+        width: 400px;
+    }
+
 
 }
 
