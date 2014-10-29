@@ -182,14 +182,72 @@ section {
     text-decoration: none;
 }
 
+#timeline .line, #timeline .timeline {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
 
+#timeline {
+    background: #fff;
+    font-size: 1.2em;
+}
 
+#timeline .line {
+    background-color: #39B7EA;
+    width: 5px;
+    height: 600px;
+}
 
+#timeline .line:before, #timeline .line:after {
+    background-color: #39B7EA;
+    width: 15px;
+    height: 5px;
+    left: -5px;
+    /*border-radius: 100%;*/
+    position: absolute;
+    content: "";
+}
 
+#timeline .line:after {
+    bottom: 0px;
+    display: none;
+}
 
+#timeline .timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
 
+#timeline .timeline li {
+    margin: 33px 30px 33px 20px;
+}
 
+#timeline .timeline li:first-child {
+    margin-top: -10px;
+}
 
+#timeline .timeline li:before {
+    background-color: #39B7EA;
+    width: 15px;
+    height: 5px;
+    left: -5px;
+    margin-top: 10px;
+    /*border-radius: 100%;*/
+    position: absolute;
+    content: "";
+}
+
+#timeline .timeline li .date {
+    font-weight: bold;
+}
+
+#timeline .timeline li a {
+    text-decoration: none;
+    color: #777;
+}
 
 /* ==========================================================================
    Media Queries
@@ -215,7 +273,15 @@ section {
         width: 400px;
     }
 
+    #explanation p {
+        font-size: 3em;
+    }
 
+    #timeline .line, #timeline .timeline {
+        position: absolute;
+        top: 40px;
+        left: 200px;
+    }
 }
 
 @media print,
