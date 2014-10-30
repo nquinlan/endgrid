@@ -318,16 +318,114 @@ section {
 
 #travel .plane-landing {
     position: absolute;
-    z-index: 3;
-    bottom: 30px;
     right: 20px;
+    bottom: 30px;
     width: 10%;
+    z-index: 3;
 }
 
 #travel .plane-landing object {
     width: 100%;
     transform: scale(-1,1);
 }
+
+#locations {
+    background: #000;
+}
+
+#locations .airport-count {
+    color: #fff;
+    text-align: center;
+}
+
+#locations .airport-count .number {
+    font-size: 5em;
+    margin: 10px 0;
+}
+
+#locations .airport-count .caption {
+    margin: 10px 30px;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#locations .airports {
+    width: 80%;
+    max-width: 300px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+}
+
+#locations .airports.large {
+    text-align: left;
+}
+
+#locations .airports.large .id {
+    width: 100px;
+    height: 100px;
+    margin: 50px 40px 50px 0;
+    float: left;
+}
+
+#locations .airports.large .id object {
+    width: 100%;
+    max-height: 50px;
+}
+
+#locations .airports .name {
+    font-weight: bold;
+}
+
+#locations .airports.large .number {
+    font-size: 10em;
+    font-weight: bold;
+    text-align: right;
+}
+
+#locations .airports.large .explanation {
+    margin-top: -40px;
+    text-align: right;
+}
+
+#locations .airports.small {
+    font-size: 3em;
+    padding-bottom: 40px;
+}
+
+#locations .airports.small .name {
+    margin-right: 140px;
+}
+
+#locations .airports.small li:nth-child(2n) {
+    color: #aaa;
+}
+
+#locations .days {
+    color: #fff;
+    font-size: 2em;
+    margin-left: 40px;
+}
+
+#locations .car {
+    width: 20%;
+    position: absolute;
+    margin-top: -10px;
+}
+
+#locations .car object {
+    width: 100%;
+}
+
+#locations .road {
+    width: 100%;
+    height: 85px;
+    background: url(../img/road.png);
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -361,6 +459,16 @@ section {
         position: absolute;
         top: 40px;
         left: 200px;
+    }
+    #locations .airport-count .number, #locations .airport-count .caption {
+        font-size: 10em;
+    }
+    #locations .days {
+        font-size: 6em;
+    }
+    #locations .car {
+        width: 10%;
+        margin-top: -50px;
     }
 }
 
