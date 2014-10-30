@@ -10,4 +10,5 @@ $(function () {
 	$("#title h1, #title h2").bigtext({
 	    childSelector: '> span'
 	});
+	$(".segments").width($(window).innerWidth());
 });
