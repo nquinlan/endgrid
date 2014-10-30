@@ -193,49 +193,25 @@ section {
     font-size: 1.2em;
 }
 
-#timeline .line {
-    background-color: #39B7EA;
-    width: 5px;
-    height: 600px;
-}
-
-#timeline .line:before, #timeline .line:after {
-    background-color: #39B7EA;
-    width: 15px;
-    height: 5px;
-    left: -5px;
-    /*border-radius: 100%;*/
-    position: absolute;
-    content: "";
-}
-
-#timeline .line:after {
-    bottom: 0px;
-    display: none;
-}
-
 #timeline .timeline {
     position: relative;
-    padding: 0;
-    margin: 0;
+    padding: 40px 0;
+    margin: -40px 0 0 0;
+    min-height: 100%;
     list-style: none;
+    border-left: 5px solid #39B7EA;
 }
 
 #timeline .timeline li {
     margin: 33px 30px 33px 20px;
 }
 
-#timeline .timeline li:first-child {
-    margin-top: -10px;
-}
-
 #timeline .timeline li:before {
     background-color: #39B7EA;
     width: 15px;
     height: 5px;
-    left: -5px;
+    left: -10px;
     margin-top: 10px;
-    /*border-radius: 100%;*/
     position: absolute;
     content: "";
 }
