@@ -225,6 +225,110 @@ section {
     color: #777;
 }
 
+#travel {
+    background-color: #39B7EA;
+    min-height: 200vh;
+}
+
+#travel .plane {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    z-index: 3;
+}
+
+#travel .plane img, #travel .plane object {
+    width: 200px;
+}
+
+#travel h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+    font-size: 5em;
+}
+
+#travel h2.miles {
+    margin-top: 300px;
+
+    color: rgba(215, 244, 255, 0.9);
+    z-index: 3;
+}
+
+#travel .segment-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 700px;
+    height: 15px;
+    
+    overflow: hidden;
+}
+
+#travel .segments {
+    position: absolute;
+    top: 5px;
+
+    overflow: visible;
+
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+}
+
+#travel .segment {
+    position: absolute;
+    top: 0;
+    width: 5px;
+    height: 15px;
+    background-color: #fff;
+}
+
+#travel .segments .segment {
+    top: -5px;
+}
+
+#travel .seg-trip {
+    position: absolute;
+    top: 750px;
+    left: 0;
+    right: 0;
+}
+
+#travel .seg-trip h2 {
+    position: relative;
+}
+
+#travel h2.segments-count {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#travel h2.trips {
+    color: #0000fc;
+    margin-top: 0;
+}
+
+#travel .control {
+    position: absolute;
+    bottom: 0;
+}
+
+#travel .plane-landing {
+    position: absolute;
+    z-index: 3;
+    bottom: 30px;
+    right: 20px;
+    width: 10%;
+}
+
+#travel .plane-landing object {
+    width: 100%;
+    transform: scale(-1,1);
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
