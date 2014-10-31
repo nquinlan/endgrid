@@ -549,6 +549,64 @@ section {
     text-align: center;
 }
 
+#shirts {
+    min-height: 105vh;
+
+    color: #FFF;
+
+    background: no-repeat center center;
+    background-size: cover;
+
+    -webkit-backface-visibility: hidden;
+
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
+}
+
+#shirts h2 {
+    opacity: .8;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#shirts .explanation {
+    width: 100%;
+    margin: 20px 0;
+    background-color: rgba(255,255,255,.6);
+    color: #000;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+#shirts .explanation p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#shirts .claim {
+    color: #FFF;
+    background-color: rgba(255,255,255,.1);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: block;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 160px;
+    text-align: center;
+
+    -moz-transition: background-color 300ms;
+    -webkit-transition: background-color 300ms;
+    transition: background-color 300ms;
+}
+
+#shirts .claim:hover {
+    background-color: rgba(255,255,255,.3);
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -624,6 +682,9 @@ section {
     }
     #work .contributions span {
         text-align: left;
+    }
+    #shirts h2 {
+        font-size: 6em;
     }
 }
 
