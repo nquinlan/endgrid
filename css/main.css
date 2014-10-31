@@ -600,6 +600,7 @@ section {
 
 #shirts .claim {
     color: #FFF;
+    text-shadow: 0 0 2px #999;
     background-color: rgba(255,255,255,.1);
     border: 2px solid #fff;
     border-radius: 10px;
