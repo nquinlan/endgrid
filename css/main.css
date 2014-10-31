@@ -607,6 +607,53 @@ section {
     background-color: rgba(255,255,255,.3);
 }
 
+#learned {
+    background: #fff;
+}
+
+#learned h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#learned ul {
+    font-family: "Garamond", "Georgia", serif;
+    font-size: 1.3em;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#learned li {
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px 40px;
+}
+
+.photos {
+    background: #fff;
+}
+
+.photos ul {
+    position: absolute;
+    width: 3700px;
+    top: 50vh;
+    margin-top: -250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.photos ul li {
+    margin: 5px 2.5px;
+    display: inline-block;
+}
+
+.photos ul li img {
+    max-height: 500px;
+}
+
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -685,6 +732,15 @@ section {
     }
     #shirts h2 {
         font-size: 6em;
+    }
+
+    #learned h2 {
+        font-size: 6em;
+    }
+    #learned ul {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
     }
 }
 
