@@ -636,7 +636,6 @@ section {
 
 .photos ul {
     position: absolute;
-    width: 3700px;
     top: 50vh;
     margin-top: -250px;
     list-style: none;
@@ -651,6 +650,17 @@ section {
 
 .photos ul li img {
     max-height: 500px;
+}
+
+#prose {
+    min-width: auto;
+    font-family: "Garamond", "Georgia", serif;
+    font-size: 2em;
+    background: #fff;
+}
+
+#prose p {
+    margin: 45px 10%;
 }
 
 
