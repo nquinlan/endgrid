@@ -668,7 +668,7 @@ section {
     margin: 45px 10%;
 }
 
-#next {
+#contact, #next {
     background: #fff;
 }
 
@@ -677,18 +677,71 @@ section {
     margin: 0;
 }
 
-#next p {
+#next p, #contact p {
     margin: 20px 10%;
     max-width: 600px;
     font-size: 1.2em;
 }
 
-#next p.explanation {
+#next p.explanation, #contact p.explanation {
     font-size: 2em;
     max-width: 100%;
 }
 
+#contact h2, .sendgrid-subscription-widget {
+    margin: 20px 10%;
+    text-align: left;
+}
 
+#contact ul {
+    list-style: none;
+    margin: 20px 10%;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline-block;
+}
+
+#contact ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 2px solid #666;
+    text-align: center;
+    margin: 0 40px 20px 0;
+}
+
+.sendgrid-subscription-widget {
+    font-size: 2em;
+}
+
+.sendgrid-subscription-widget input[name=email] {
+    border: 0;
+    width: 100%;
+    outline: none;
+    position: relative;
+}
+
+.sendgrid-subscription-widget input[name=email]:after {
+    content: "Hit Enter";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-color: red;
+}
+
+.sendgrid-subscription-widget input[type=submit] {
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    background: transparent;
+    font-size: 18px;
+    visibility: hidden;
+}
 
 /* ==========================================================================
    Media Queries
