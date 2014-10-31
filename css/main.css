@@ -569,6 +569,7 @@ section {
 
     background: no-repeat center center;
     background-size: cover;
+    background-color: #000;
 
     -webkit-backface-visibility: hidden;
 
