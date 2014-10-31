@@ -108,6 +108,11 @@ section {
     overflow: hidden;
 }
 
+#mobile {
+    background: #fff;
+    padding: 20px;
+}
+
 #title {
     position: relative;
     overflow: hidden;
@@ -748,6 +753,9 @@ section {
    ========================================================================== */
 
 @media only screen and (min-width: 1240px) {
+    #mobile {
+        display: none;
+    }
     h2.respond {
         font-size: 6em;
     }
