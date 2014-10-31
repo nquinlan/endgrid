@@ -90,6 +90,14 @@ html, body {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
+.serif {
+    font-family: "Garamond", "Georgia", serif;
+}
+
+h2.respond {
+    font-size: 3em;
+}
+
 body {
     background: black;
 }
@@ -612,12 +620,10 @@ section {
 }
 
 #learned h2 {
-    font-size: 3em;
     text-align: center;
 }
 
 #learned ul {
-    font-family: "Garamond", "Georgia", serif;
     font-size: 1.3em;
     list-style: none;
     margin: 20px 0;
@@ -653,8 +659,7 @@ section {
 }
 
 #prose {
-    min-width: auto;
-    font-family: "Garamond", "Georgia", serif;
+    min-height: auto;
     font-size: 2em;
     background: #fff;
 }
@@ -663,12 +668,36 @@ section {
     margin: 45px 10%;
 }
 
+#next {
+    background: #fff;
+}
+
+#next h2 {
+    text-align: center;
+    margin: 0;
+}
+
+#next p {
+    margin: 20px 10%;
+    max-width: 600px;
+    font-size: 1.2em;
+}
+
+#next p.explanation {
+    font-size: 2em;
+    max-width: 100%;
+}
+
+
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 @media only screen and (min-width: 1240px) {
+    h2.respond {
+        font-size: 6em;
+    }
     #title img {
         position: absolute;
         bottom: 0px;
@@ -739,13 +768,6 @@ section {
     }
     #work .contributions span {
         text-align: left;
-    }
-    #shirts h2 {
-        font-size: 6em;
-    }
-
-    #learned h2 {
-        font-size: 6em;
     }
     #learned ul {
         -webkit-column-count: 3;
