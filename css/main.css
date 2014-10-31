@@ -426,6 +426,126 @@ section {
     background: url(../img/road.png);
 }
 
+#work {
+    background: #fff;
+    padding: 20px 0;
+}
+
+#work .recieved {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#work .recieved .email {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#work .recieved .indicator {
+    position: absolute;
+    right: 40px;
+    padding: 3px 9px;
+    border: 2px solid white;
+    border-radius:100px;
+    background: linear-gradient(top, #FF6969 0%,#ff0000 100%);
+    background: -webkit-linear-gradient(top, #FF6969 0%,#ff0000 100%);
+    background: -moz-linear-gradient(top, #FF6969 0%,#ff0000 100%);
+    box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 1px 4px rgba(0,0,0,.4), 0 0 1px     rgba(0,0,0,.7) inset, 0 10px 0px rgba(255,255,255,.11) inset; 
+    background-clip: padding-box;
+    font:bold 20px/28px "Helvetica Neue", sans-serif; 
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.6);
+}
+
+#work .recieved img {
+    width: 100%;
+}
+
+#work .recieved .caption {
+    display: block;
+    padding: 20px;
+    font-size: 3em;
+    text-align: center;
+}
+
+#work .sent {
+    position: absolute;
+    margin-right: 25px;
+}
+
+#work .sent .caption {
+    display: block;
+    padding: 20px;
+    font-size: 3em;
+    text-align: center;
+}
+
+#work .sent .email {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 290px;
+}
+
+#work .sent .email object {
+    position: absolute;
+    width: 300px;
+}
+
+#work .sent .email .indicator {
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    border: 10px solid #000;
+    background: #fff;
+    bottom: 0;
+    left: 25px;
+    text-align: center;
+    color: #e02329;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+#work .calendar {
+    position: relative;
+    max-width: 900px;
+    min-height: 300px;
+    padding-top: 40px;
+    margin: 400px auto 40px auto;
+    background: url(../img/calendar-back.png);
+}
+
+#work .calendar .event {
+    width: 100%;
+    margin: 40px 0 40px 0;
+    overflow: hidden;
+    background: #acd7f9;
+    text-align: center;
+    font-size: 3em;
+}
+
+#work .contributions .graph {
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    float: left;
+}
+
+#work .contributions .graph td {
+    width: 11px;
+    height: 11px;
+    background: #eeeeee;
+}
+
+#work .contributions span {
+    display: block;
+    padding-top: 13px;
+    font-size: 3em;
+    text-align: center;
+}
 
 /* ==========================================================================
    Media Queries
@@ -469,6 +589,39 @@ section {
     #locations .car {
         width: 10%;
         margin-top: -50px;
+    }
+    #work .recieved .email {
+        float: left;
+        margin-right: 40px;
+    }
+    #work .recieved .caption {
+        padding: 140px 0 0 0;
+        font-size: 6em;
+        text-align: left;
+    }
+    #work .sent {
+        width: 900px;
+        margin-right: 50px;
+    }
+    #work .sent .caption {
+        padding: 180px 350px 0 0;
+        float: right;
+        font-size: 6em;
+        text-align: left;
+    }
+    #work .calendar {
+        padding: 0;
+    }
+    #work .calendar .event {
+        position: absolute;
+        width: 25%;
+        margin: 0;
+    }
+    #work .contributions .graph {
+        margin-right: 20px;
+    }
+    #work .contributions span {
+        text-align: left;
     }
 }
 
@@ -525,6 +678,10 @@ section {
 
 .invisible {
     visibility: hidden;
+}
+
+.clear {
+    clear: both;
 }
 
 .clearfix:before,
